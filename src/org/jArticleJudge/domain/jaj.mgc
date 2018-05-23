@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="org.jArticleJudge.service.impl.JajServiceImpl" x="314" y="127">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="org.jArticleJudge.dao.UserDao"
+            endpointName="userDao" kind="Simple"/>
+        <Association destinationClassName="org.jArticleJudge.dao.WordDao"
+            endpointName="WordDao" kind="Simple"/>
+        <Communication destinationClassName="org.jArticleJudge.dao.UserDao"/>
+        <Communication destinationClassName="org.jArticleJudge.dao.WordDao"/>
+    </Class>
+    <Class name="org.jArticleJudge.dao.UserDao" x="111" y="149">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="org.jArticleJudge.dao.WordDao" x="783" y="426">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/lib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/poi-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/poi-examples-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/poi-excelant-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/poi-ooxml-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/poi-scratchpad-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/ooxml-lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/ooxml-lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="F:/毕设/poi-bin-3.10-FINAL-20140208/poi-3.10-FINAL/ooxml-lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/jcorpus/lib/sen.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
