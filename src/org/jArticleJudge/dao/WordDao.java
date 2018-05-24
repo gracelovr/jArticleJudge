@@ -25,7 +25,7 @@ public interface WordDao {
 	@Delete(" delete from "+WORDTABLE+" where word_id = #{id} ")
 	void deleteById(Integer id);
 	
-	@Select("select * from "+WORDTABLE+" where word_content = #{content}")
+	@Select("select * from "+WORDTABLE+" where word_content LIKE CONCAT('%',#{content},'%')")
 	List<Word> findWordByContent(String content);
 	
 	@Select("select word_lvl from "+WORDTABLE+" where word_content = #{content}")

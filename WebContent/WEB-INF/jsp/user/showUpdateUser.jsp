@@ -30,33 +30,6 @@
 	$(function(){
     	/** 员工表单提交 */
 		$("#userForm").submit(function(){
-			var username = $("#user_name");
-			var types = document.getElementsByName("user_type"); 
-			var value = "";
-			 for(var i = 0;i<types.length;i++)  
-		        {  
-		            if(types[i].checked==true)  
-		            {value = types[i].value;  
-		            break;}  
-		        }  
-			var password = $("#password");
-			var msg = "";
-			if ($.trim(username.val()) == ""){
-				msg = "姓名不能为空！";
-				user_name.focus();
-			}else if ($.trim(type.val()) == ""){
-				msg = "用户类别不能为空！";
-				user_type.focus();
-			}else if($.trim(password.val()) == ""||$.trim(password.val()) == "新密码"){
-				msg = "密码不能为空！";
-				password.focus();
-			}
-			if (msg != ""){
-				$.ligerDialog.error(msg);
-				return false;
-			}else{
-				return true;
-			}
 			$("#userForm").submit();
 		});
     	$("#cancel").click(function(){

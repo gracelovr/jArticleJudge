@@ -87,11 +87,11 @@ public class UserDynaSqlProvider {
 			return new SQL(){
 				{
 					UPDATE(USERTABLE);
-					if(user.getUser_name() != null){
+					if(user.getUser_name() != null&& !user.getUser_name().equals("")){
 						SET(" user_name = #{user_name} ");
 					}
 					
-					if(user.getUser_type()!= null){
+					if(user.getUser_type()!= null&& !user.getUser_type().equals("")){
 						SET(" user_type = #{user_type} ");
 					}
 					WHERE(" user_id = #{user_id} ");

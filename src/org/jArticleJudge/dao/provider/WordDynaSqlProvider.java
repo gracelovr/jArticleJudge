@@ -29,7 +29,7 @@ public class WordDynaSqlProvider {
 				}
 			}
 		}.toString();
-		
+		sql += " order by word_lvl asc ";
 		if(params.get("pageModel") != null){
 			sql += " limit #{pageModel.firstLimitParam} , #{pageModel.pageSize}  ";
 		}

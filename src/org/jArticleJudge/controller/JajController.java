@@ -226,7 +226,10 @@ public class JajController{
 			mv.setViewName("/user/showUpdateUser");
 		}else{
 			// 执行修改操作
-			String password = SHA256Util.getSHA256Str(user.getPassword());
+			String password = "";
+			if(!user.getPassword().equals("")){
+			password = SHA256Util.getSHA256Str(user.getPassword());
+			}
 			JajService.modifyUser(user,password);
 			// 设置客户端跳转到查询请求
 			mv.setViewName("redirect:/user/selectUser");
@@ -405,17 +408,17 @@ public class JajController{
 			lvlArr[6]++;
 			}
 		}
-		//N5单词记1分，N4单词2分，N3单词3分，N2单词5分，N1单词8分
+		//N5单词记1分，N4单词2分，N3单词3分，N2单词10分，N1单词20分
 		double point;
 		if(lvlArr[6] != 0){
-			point = (lvlArr[0]*8 + lvlArr[1]*5 + lvlArr[2]*3 + lvlArr[3]*2 + lvlArr[4])/lvlArr[6];
-			if(point < 2){
+			point = (double)(lvlArr[0]*20 + lvlArr[1]*10 + lvlArr[2]*3 + lvlArr[3]*2 + lvlArr[4])/(double)lvlArr[6];
+			if(point < 1){
 				lvlArr[5] = 5;
-			}else if(point < 3){
+			}else if(point < 2){
 				lvlArr[5] = 4;
-			}else if(point < 5){
+			}else if(point < 3){
 				lvlArr[5] = 3;
-			}else if(point < 8){
+			}else if(point < 10){
 				lvlArr[5] = 2;
 			}else{
 				lvlArr[5] = 1;

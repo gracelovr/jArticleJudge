@@ -107,11 +107,16 @@ public class JajServiceImpl implements JajService{
 	@Override
 	public void modifyUser(User user,String password) {
 		synchronized (this) {
+		if(!user.getUser_name().equals("")||
+				user.getUser_type()!=null){
 		userDao.update(user);
+		}
+		if(!password.equals("")){
 		Password pw = new Password();
 		pw.setUser_id(user.getUser_id());
 		pw.setPw_content(password);
 		PwDao.update(pw);
+		}
 		}
 	}
 	
@@ -143,7 +148,9 @@ public class JajServiceImpl implements JajService{
 
 	@Override
 	public void addWord(Word word) {
+		if(WordDao.checkLvl(word.getWord_content())==null){
 		WordDao.save(word);
+		}
 	}
 
 	@Override

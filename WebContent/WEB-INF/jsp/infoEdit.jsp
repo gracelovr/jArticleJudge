@@ -46,16 +46,17 @@
 					</p>
 
 				</div>
-				<div class="banner_top_right" style="width:39%">
+				<div class="banner_top_right" style="width: 48%">
 					<nav class="navbar navbar-default">
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav cl-effect-14">
-						<li><a href="${ctx }/infoEdit?flag=1" class="active">我的信息</a></li>
-						<li><a href="${ctx }/showText">我的文章</a></li>
-						
-					</ul>
-				</div>
-				
+					<div class="collapse navbar-collapse nav-wil"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav cl-effect-14">
+						<li><a href="${ctx }/mainPage">主页</a></li>
+							<li><a href="${ctx }/infoEdit?flag=1">我的信息</a></li>
+							<li><a href="${ctx }/textList">我的文章</a></li>
+
+						</ul>
+					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
